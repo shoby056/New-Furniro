@@ -1,0 +1,72 @@
+.shop-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.breadcrumb {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+.shop-hero {
+  height: 235px;
+
+  position: relative;
+
+  background-image: url("./assets/images/Shop/ShopHero.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-hero-overlay {
+  position: absolute;
+  inset: 1;
+
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.shop-hero-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+}
+
+.shop-hero-content h1 {
+  margin: 0 0 5px;
+
+  font-size: 36px;
+  font-weight: 600;
+
+  color: #111;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 13px;
+}
+
+.breadcrumb span:first-child {
+  font-weight: 600;
+}

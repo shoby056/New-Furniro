@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.page-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.page-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.page-btn.active {
+  background-color: rgb(232, 166, 101);
+  color: white;
+  border-color: black;
+}
+
+.next-btn {
+  width: 70px;
+}

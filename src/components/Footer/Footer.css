@@ -1,0 +1,209 @@
+.footer {
+  border-top: 1px solid #eee;
+
+  padding: 50px 30px 20px;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+
+/* =========================
+   FOOTER CONTAINER
+========================= */
+
+.footer-container {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1.5fr 2fr;
+
+  gap: 40px;
+
+  padding-bottom: 35px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.footer h2 {
+  margin: 0 0 20px;
+
+  font-size: 24px;
+
+  color: #222;
+}
+
+.footer h4 {
+  margin: 0 0 22px;
+
+  color: #999;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.footer p {
+  color: #888;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  margin: 0 0 20px;
+
+  max-width: 250px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer a {
+  display: block;
+
+  color: #222;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  margin-bottom: 18px;
+
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #b88b2a;
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter-input {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  width: 100%;
+}
+
+.newsletter-input input {
+  width: 100%;
+
+  border: none;
+
+  border-bottom: 1px solid #555;
+
+  outline: none;
+
+  padding: 10px 0;
+
+  font-size: 11px;
+}
+
+.newsletter-input input::placeholder {
+  color: #999;
+}
+
+.newsletter-input button {
+  border: none;
+
+  background: none;
+
+  border-bottom: 1px solid #555;
+
+  padding: 10px 5px;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.3s;
+}
+
+.newsletter-input button:hover {
+  color: #b88b2a;
+
+  border-color: #b88b2a;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+  border-top: 1px solid #eee;
+
+  padding-top: 20px;
+
+  font-size: 11px;
+
+  color: #888;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .footer h2 {
+    margin-bottom: 18px;
+  }
+
+  .footer h4 {
+    margin-bottom: 18px;
+  }
+
+  .newsletter-input {
+    max-width: 300px;
+
+    gap: 15px;
+  }
+
+}
