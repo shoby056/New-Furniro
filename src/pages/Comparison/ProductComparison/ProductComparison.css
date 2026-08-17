@@ -1,0 +1,330 @@
+.comparison-section {
+  width: 100%;
+  padding: 18px 0 55px;
+}
+
+.comparison-top {
+  width: 92%;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1.1fr;
+
+  gap: 25px;
+  align-items: start;
+}
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.comparison-info {
+  padding-top: 12px;
+}
+
+.comparison-info h2 {
+  margin: 0 0 15px;
+
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.comparison-info button {
+  background: transparent;
+  border: none;
+
+  border-bottom: 1px solid #333;
+
+  padding: 0 0 5px;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   PRODUCT
+========================= */
+
+.comparison-product {
+  width: 100%;
+}
+
+.comparison-image {
+  width: 100%;
+  height: 100px;
+
+  background: #f9f1e7;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.comparison-image img {
+  width: 90%;
+  height: 90%;
+
+  object-fit: contain;
+}
+
+.comparison-product h3 {
+  margin: 8px 0 3px;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.comparison-price {
+  margin: 0 0 4px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.comparison-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 9px;
+}
+
+.stars {
+  color: #ffc107;
+  letter-spacing: 1px;
+}
+
+.reviews {
+  color: #aaa;
+  font-size: 7px;
+}
+
+
+/* =========================
+   ADD PRODUCT
+========================= */
+
+.add-product {
+  padding-top: 12px;
+}
+
+.add-product h3 {
+  margin: 0 0 14px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.add-product select {
+  width: 125px;
+  height: 30px;
+
+  padding: 0 8px;
+
+  border: none;
+  border-radius: 3px;
+
+  background: #b88b27;
+  color: white;
+
+  font-size: 8px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.comparison-table {
+  width: 92%;
+  max-width: 1160px;
+
+  margin: 28px auto 0;
+
+  border-top: 1px solid #ddd;
+}
+
+.comparison-group {
+  width: 100%;
+}
+
+.comparison-heading {
+  width: 22%;
+
+  padding: 23px 20px 12px;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.comparison-row {
+  display: grid;
+
+  grid-template-columns: 22% 39% 39%;
+
+  min-height: 38px;
+}
+
+.comparison-label,
+.comparison-value {
+  padding: 6px 20px;
+
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.comparison-label {
+  color: #111;
+}
+
+.comparison-value {
+  border-left: 1px solid #eee;
+  color: #222;
+}
+
+
+/* =========================
+   CART BUTTONS
+========================= */
+
+.comparison-cart-row {
+  display: grid;
+
+  grid-template-columns: 22% 39% 39%;
+
+  margin-top: 8px;
+}
+
+.comparison-cart-row button {
+  width: 110px;
+  height: 34px;
+
+  margin-left: 20px;
+
+  border: none;
+
+  background: #b88b27;
+  color: white;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .comparison-top {
+    width: 90%;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .comparison-info {
+    grid-column: span 2;
+  }
+
+  .add-product {
+    grid-column: span 2;
+  }
+
+  .comparison-table {
+    width: 90%;
+
+    overflow-x: auto;
+  }
+
+  .comparison-row {
+    min-width: 700px;
+  }
+
+  .comparison-heading {
+    min-width: 150px;
+  }
+
+  .comparison-cart-row {
+    min-width: 700px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .comparison-section {
+    padding: 30px 0;
+  }
+
+  .comparison-top {
+    width: 92%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+  .comparison-info {
+    grid-column: span 2;
+  }
+
+  .comparison-info h2 {
+    font-size: 15px;
+  }
+
+  .comparison-image {
+    height: 90px;
+  }
+
+  .comparison-product h3 {
+    font-size: 11px;
+  }
+
+  .comparison-price {
+    font-size: 9px;
+  }
+
+  .add-product {
+    grid-column: span 2;
+  }
+
+  .comparison-table {
+    width: 92%;
+
+    overflow-x: auto;
+  }
+
+  .comparison-row {
+    min-width: 650px;
+  }
+
+  .comparison-heading {
+    padding-left: 10px;
+  }
+
+  .comparison-label,
+  .comparison-value {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

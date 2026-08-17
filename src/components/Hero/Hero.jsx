@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -25,9 +26,11 @@ function Hero() {
           Ut elit tellus.
         </p>
 
-        <button>
-          BUY NOW
-        </button>
+       <Link to="/Shop">
+  <button>
+    BUY NOW
+  </button>
+</Link>
 
       </div>
 

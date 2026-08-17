@@ -43,8 +43,8 @@ function Navbar({ onCartClick }) {
           Shop
         </Link>
 
-        <Link to="/About">
-          About
+        <Link to="/Blog">
+          Blog
         </Link>
 
         <Link to="/contact">

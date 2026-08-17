@@ -51,6 +51,12 @@ function CartSidebar({
     navigate("/checkout");
   };
 
+  // Comparison page open
+  const openComparisonPage=()=>{
+    onClose();
+    navigate("/Comparison")
+  }
+
 
   return (
 
@@ -218,8 +224,8 @@ function CartSidebar({
 
 
               {/* Comparison */}
-
-              <button>
+      
+              <button onClick={openComparisonPage}>
                 Comparison
               </button>
 

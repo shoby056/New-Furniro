@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./ProductInformation.css";
+import { useNavigate } from "react-router-dom";
 
 const ProductInformation = ({
   productId,
   productImage,
   onAddToCart,
 }) => {
-
   const [quantity, setQuantity] = useState(1);
-
   const [size, setSize] = useState("L");
+
+  const navigate = useNavigate();
 
   // =========================
   // QUANTITY
@@ -20,11 +21,9 @@ const ProductInformation = ({
   };
 
   const decreaseQuantity = () => {
-
     if (quantity > 1) {
       setQuantity(quantity - 1);
     }
-
   };
 
   // =========================
@@ -32,25 +31,24 @@ const ProductInformation = ({
   // =========================
 
   const handleAddToCart = () => {
-
     const product = {
-
       id: Number(productId),
-
       name: "Asgaard sofa",
-
       price: 250000,
-
       quantity: quantity,
-
-      // ProductGallery wali image
       image: productImage,
-
       size: size,
-
     };
 
     onAddToCart(product);
+  };
+
+  // =========================
+  // COMPARISON PAGE
+  // =========================
+
+  const openComparisonPage = () => {
+    navigate("/comparison");
   };
 
   return (
@@ -85,11 +83,7 @@ const ProductInformation = ({
       {/* Description */}
 
       <p className="product-description">
-
-        Setting the bar as one of the loudest speakers in its class,
-        the Kilburn is a compact, stout-hearted hero with a well-balanced
-        audio which boasts a clear midrange and extended highs for a sound.
-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem, amet saepe ducimus obcaecati ratione ipsa, reiciendis voluptatibus quod ullam accusantium ipsam enim autem, omnis nesciunt. Ipsum totam at odit!.
       </p>
 
       {/* Size */}
@@ -101,7 +95,6 @@ const ProductInformation = ({
       <div className="size-options">
 
         {["L", "XL", "XS"].map((item) => (
-
           <button
             type="button"
             key={item}
@@ -114,7 +107,6 @@ const ProductInformation = ({
           >
             {item}
           </button>
-
         ))}
 
       </div>
@@ -187,6 +179,7 @@ const ProductInformation = ({
         <button
           type="button"
           className="compare-btn"
+          onClick={openComparisonPage}
         >
           + &nbsp; Compare
         </button>
